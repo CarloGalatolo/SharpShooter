@@ -125,8 +125,32 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 1738803883316797760, guid: e57716bd7dd54f249abf4de9e9395767, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1163467414367742016}
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1453545246914620948, guid: e57716bd7dd54f249abf4de9e9395767, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: -3052135660513124433}
   m_SourcePrefab: {fileID: 100100000, guid: e57716bd7dd54f249abf4de9e9395767, type: 3}
+--- !u!1 &8584510605600909826 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1453545246914620948, guid: e57716bd7dd54f249abf4de9e9395767, type: 3}
+  m_PrefabInstance: {fileID: 7137723113179431958}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &-3052135660513124433
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8584510605600909826}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bc81a2eb92451874cb19d3bf586850f4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  floatingPhase: 2
+  floatingAmplitude: 0.001
+  rotationSpeed: 50
+  weaponSO: {fileID: 11400000, guid: 87998934a239e2f4886ff78df44f3df4, type: 2}
 --- !u!4 &8876368031095006550 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1738803883316797760, guid: e57716bd7dd54f249abf4de9e9395767, type: 3}

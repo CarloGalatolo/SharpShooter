@@ -10,7 +10,6 @@ GameObject:
   m_Component:
   - component: {fileID: 3108420478891646422}
   - component: {fileID: 3172584615894089340}
-  - component: {fileID: 1959404746627565281}
   m_Layer: 0
   m_Name: Pickup Base
   m_TagString: Untagged
@@ -55,18 +54,6 @@ SphereCollider:
   serializedVersion: 3
   m_Radius: 0.5
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &1959404746627565281
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1453545246914620948}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bc81a2eb92451874cb19d3bf586850f4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &4558087131563282226
 GameObject:
   m_ObjectHideFlags: 0

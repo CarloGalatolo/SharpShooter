@@ -9,6 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2980111928475793307}
+  - component: {fileID: 8898144723069285624}
   - component: {fileID: 5852174713907027341}
   m_Layer: 3
   m_Name: Active Weapon
@@ -32,6 +33,22 @@ Transform:
   m_Children: []
   m_Father: {fileID: 4879596992919996381}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8898144723069285624
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5318167376501248572}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: daa4e7fedfb6d5945a5d780c1664b913, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerFollowCamera: {fileID: 0}
+  zoomVignette: {fileID: 0}
+  startingWeapon: {fileID: 0}
+  ammoText: {fileID: 0}
 --- !u!95 &5852174713907027341
 Animator:
   serializedVersion: 7
@@ -212,6 +229,7 @@ MonoBehaviour:
   jump: 0
   sprint: 0
   shoot: 0
+  zoom: 0
   analogMovement: 0
   cursorLocked: 1
   cursorInputForLook: 1

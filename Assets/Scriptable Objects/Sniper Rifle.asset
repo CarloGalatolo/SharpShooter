@@ -17,6 +17,7 @@ MonoBehaviour:
   CanZoom: 1
   ZoomAmount: 10
   ZoomRotationSpeed: 0.3
-  Damage: 3
   FireRate: 1
+  Damage: 3
+  MagazineSize: 5
   HitVFXPrefab: {fileID: 3045083070540237122, guid: b3c0ad9fd3220f3409e043712454d468, type: 3}
