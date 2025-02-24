@@ -73,7 +73,7 @@ public class Weapon : MonoBehaviour
 		if ( Physics.Raycast(Camera.main.transform.position, Camera.main.transform.forward, out RaycastHit hit, Mathf.Infinity, interactionLayers, QueryTriggerInteraction.Ignore) )
 		{
 			Instantiate(WeaponSO.HitVFXPrefab, hit.point, Quaternion.identity);	// Shot hit VFX;
-			EnemyHealth enemyHealth = hit.collider.GetComponent<EnemyHealth>();	// Check if hit an enemy.
+			EnemyHealth enemyHealth = hit.collider.GetComponentInParent<EnemyHealth>();	// Check if hit an enemy.
 			enemyHealth?.TakeDamage(WeaponSO.Damage);	// Damage enemy if hit.
 		}
 	}
