@@ -5,3 +5,4 @@ Package Dependencies (place under "Imported Assets/3rd Party", which is ignored 
 - TextMeshPro
 - [Simple FX - Cartoon Particles](https://assetstore.unity.com/packages/vfx/particles/simple-fx-cartoon-particles-67834)
 - [Starter Assets - FirstPerson](https://assetstore.unity.com/packages/essentials/starter-assets-firstperson-updates-in-new-charactercontroller-pa-196525)
+- [Game of Squids font](https://www.dafont.com/it/game-of-squids.font) (in path "3rd Party/Fonts")

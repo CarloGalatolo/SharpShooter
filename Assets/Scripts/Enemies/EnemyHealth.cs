@@ -6,12 +6,20 @@ public class EnemyHealth : MonoBehaviour
 	[SerializeField] uint startingHealth = 3;
 
 	uint currentHealth;
+	GameManager gameManager;
 
 
 
 	void Awake ()
 	{
 		currentHealth = startingHealth;
+	}
+
+
+	void Start ()
+	{
+		gameManager = FindFirstObjectByType<GameManager>();
+		gameManager.AdjustEnemiesLeft(1);
 	}
 
 
@@ -31,6 +39,7 @@ public class EnemyHealth : MonoBehaviour
 	public void SelfDestruct ()
 	{
 		Instantiate(explosionVFXPrefab, transform.position, Quaternion.identity);
+		gameManager.AdjustEnemiesLeft(-1);
 		Destroy(this.gameObject);
 	}
 }

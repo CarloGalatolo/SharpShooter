@@ -1,6 +1,6 @@
 using System;
-using System.Collections;
 using Cinemachine;
+using StarterAssets;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -10,8 +10,10 @@ public class PlayerHealth : MonoBehaviour
 	[SerializeField] CinemachineVirtualCamera deathCamera;
 	[SerializeField] Transform weaponCamera;
 	[SerializeField] Image[] shieldBars;
+	[SerializeField] GameObject gameOverContainer;
 
 	uint currentHealth;
+	StarterAssetsInputs starterAssetsInputs;
 
 	const int deathCameraPriority = 20;
 
@@ -25,6 +27,10 @@ public class PlayerHealth : MonoBehaviour
 
 	void Start ()
 	{
+		// Cursor in game mode.
+		starterAssetsInputs = FindFirstObjectByType<StarterAssetsInputs>();
+		starterAssetsInputs.SetCursorState(true);
+
 		AdjustShieldUI();	// Allows for starting at <10 health.
 	}
 
@@ -38,13 +44,23 @@ public class PlayerHealth : MonoBehaviour
 		}
 		else
 		{
-			weaponCamera.parent = null;
-			deathCamera.Priority = deathCameraPriority;
-
-			currentHealth = 0;
-			AdjustShieldUI();
-			Destroy(this.gameObject);
+			LoseGame();
 		}
+	}
+
+
+	void LoseGame ()
+	{
+		weaponCamera.parent = null;
+		deathCamera.Priority = deathCameraPriority;
+
+		currentHealth = 0;
+		AdjustShieldUI();
+
+		gameOverContainer.SetActive(true);
+		starterAssetsInputs.SetCursorState(false);
+
+		Destroy(this.gameObject);
 	}
 
 

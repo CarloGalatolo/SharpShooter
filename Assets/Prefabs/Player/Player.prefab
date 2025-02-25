@@ -376,9 +376,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1b6bff8fd5b8b35459f9fce12f52b7b5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  deathVirtualCamera: {fileID: 0}
-  weaponCamera: {fileID: 6173211545298480183}
   startingHealth: 5
+  deathCamera: {fileID: 0}
+  weaponCamera: {fileID: 6173211545298480183}
+  shieldBars:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  gameOverContainer: {fileID: 0}
 --- !u!114 &6508634892733016366
 MonoBehaviour:
   m_ObjectHideFlags: 0
